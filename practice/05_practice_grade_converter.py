@@ -25,3 +25,19 @@ Convert numeric grades to letters for a course gradebook.
 2. Call the function with at least three different numeric grades and print
    the results.
 '''
+
+cart = [
+    {"name": "pen", "prices": [1.0, 1.2]},
+    {"name": "notebook", "prices": [5.0]},
+    {"name": "marker", "prices": [2.0, 3.0, 2.5]}
+    
+]
+
+total = 0
+for item in cart:
+    for p in item["prices"]:
+        if p > 2.5:
+            break
+        total += p
+
+print(total)
